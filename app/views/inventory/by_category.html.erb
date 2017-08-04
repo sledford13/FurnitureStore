@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @category.each do |category| %>
+      <tr>
+        <td><%= category.name %></td>
+        <td><%= category.price %></td>
+        <td><%= category.category %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
